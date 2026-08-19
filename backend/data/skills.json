@@ -1,0 +1,302 @@
+[
+  {
+    "name": "Python",
+    "track": "Data Science",
+    "description": "General-purpose programming language widely used in data science and web development"
+  },
+  {
+    "name": "pandas",
+    "track": "Data Science",
+    "description": "Data manipulation and analysis library for Python"
+  },
+  {
+    "name": "NumPy",
+    "track": "Data Science",
+    "description": "Library for adding support for large, multi-dimensional arrays and matrices in Python"
+  },
+  {
+    "name": "SQL",
+    "track": "Data Science",
+    "description": "Domain-specific language used in programming and designed for managing data held in a RDBMS"
+  },
+  {
+    "name": "statistics",
+    "track": "Data Science",
+    "description": "The discipline that concerns the collection, organization, analysis, interpretation, and presentation of data"
+  },
+  {
+    "name": "probability",
+    "track": "Data Science",
+    "description": "Branch of mathematics concerning numerical descriptions of how likely an event is to occur"
+  },
+  {
+    "name": "data visualization",
+    "track": "Data Science",
+    "description": "The graphical representation of information and data"
+  },
+  {
+    "name": "matplotlib",
+    "track": "Data Science",
+    "description": "Plotting library for the Python programming language"
+  },
+  {
+    "name": "data cleaning",
+    "track": "Data Science",
+    "description": "Process of detecting and correcting corrupt or inaccurate records from a dataset"
+  },
+  {
+    "name": "machine learning",
+    "track": "Data Science",
+    "description": "Study of computer algorithms that can improve automatically through experience"
+  },
+  {
+    "name": "scikit-learn",
+    "track": "Data Science",
+    "description": "Machine learning library for the Python programming language"
+  },
+  {
+    "name": "deep learning",
+    "track": "Data Science",
+    "description": "Part of a broader family of machine learning methods based on artificial neural networks"
+  },
+  {
+    "name": "TensorFlow",
+    "track": "Data Science",
+    "description": "Free and open-source software library for machine learning and artificial intelligence"
+  },
+  {
+    "name": "natural language processing",
+    "track": "Data Science",
+    "description": "Subfield of linguistics, computer science, and AI concerned with the interactions between computers and human language"
+  },
+  {
+    "name": "HTML",
+    "track": "Web Development",
+    "description": "Standard markup language for documents designed to be displayed in a web browser"
+  },
+  {
+    "name": "CSS",
+    "track": "Web Development",
+    "description": "Style sheet language used for describing the presentation of a document written in HTML"
+  },
+  {
+    "name": "JavaScript",
+    "track": "Web Development",
+    "description": "Programming language that is one of the core technologies of the World Wide Web"
+  },
+  {
+    "name": "TypeScript",
+    "track": "Web Development",
+    "description": "Programming language developed and maintained by Microsoft, a strict syntactical superset of JavaScript"
+  },
+  {
+    "name": "React",
+    "track": "Web Development",
+    "description": "Free and open-source front-end JavaScript library for building user interfaces"
+  },
+  {
+    "name": "Node.js",
+    "track": "Web Development",
+    "description": "Cross-platform, back-end JavaScript runtime environment that executes JavaScript code outside a web browser"
+  },
+  {
+    "name": "Express.js",
+    "track": "Web Development",
+    "description": "Back end web application framework for Node.js"
+  },
+  {
+    "name": "REST APIs",
+    "track": "Web Development",
+    "description": "Architectural style that defines a set of constraints to be used for creating web services"
+  },
+  {
+    "name": "databases",
+    "track": "Web Development",
+    "description": "Organized collection of data, generally stored and accessed electronically from a computer system"
+  },
+  {
+    "name": "MongoDB",
+    "track": "Web Development",
+    "description": "Source-available cross-platform document-oriented database program"
+  },
+  {
+    "name": "Git",
+    "track": "Web Development",
+    "description": "Distributed version control system for tracking changes in source code"
+  },
+  {
+    "name": "responsive design",
+    "track": "Web Development",
+    "description": "Approach to web design that makes web pages render well on a variety of devices"
+  },
+  {
+    "name": "web security",
+    "track": "Web Development",
+    "description": "Protection of websites, web applications, and web services from attacks"
+  },
+  {
+    "name": "testing",
+    "track": "Web Development",
+    "description": "Software testing is an investigation conducted to provide stakeholders with information about the quality of the software"
+  },
+  {
+    "name": "Linux",
+    "track": "Cloud & DevOps",
+    "description": "Family of open-source Unix-like operating systems based on the Linux kernel"
+  },
+  {
+    "name": "shell scripting",
+    "track": "Cloud & DevOps",
+    "description": "Computer program designed to be run by the Unix shell"
+  },
+  {
+    "name": "Docker",
+    "track": "Cloud & DevOps",
+    "description": "Set of platform as a service products that use OS-level virtualization to deliver software in packages called containers"
+  },
+  {
+    "name": "Kubernetes",
+    "track": "Cloud & DevOps",
+    "description": "Open-source container-orchestration system for automating computer application deployment, scaling, and management"
+  },
+  {
+    "name": "AWS",
+    "track": "Cloud & DevOps",
+    "description": "Comprehensive, evolving cloud computing platform provided by Amazon"
+  },
+  {
+    "name": "CI/CD",
+    "track": "Cloud & DevOps",
+    "description": "Method to frequently deliver apps to customers by introducing automation into the stages of app development"
+  },
+  {
+    "name": "infrastructure as code",
+    "track": "Cloud & DevOps",
+    "description": "Process of managing and provisioning computer data centers through machine-readable definition files"
+  },
+  {
+    "name": "Terraform",
+    "track": "Cloud & DevOps",
+    "description": "Open-source infrastructure as code software tool"
+  },
+  {
+    "name": "monitoring",
+    "track": "Cloud & DevOps",
+    "description": "Observing a system to detect, record, and resolve problems"
+  },
+  {
+    "name": "networking",
+    "track": "Cloud & DevOps",
+    "description": "Interconnection of multiple devices, generally termed as hosts, connected using multiple paths"
+  },
+  {
+    "name": "cloud security",
+    "track": "Cloud & DevOps",
+    "description": "Set of policies, controls, procedures and technologies that work together to protect cloud-based systems"
+  },
+  {
+    "name": "microservices",
+    "track": "Cloud & DevOps",
+    "description": "Software architecture style that structures an application as a collection of loosely coupled services"
+  },
+  {
+    "name": "networking fundamentals",
+    "track": "Cybersecurity",
+    "description": "Basic concepts of computer networking including protocols, topologies, and models"
+  },
+  {
+    "name": "operating system security",
+    "track": "Cybersecurity",
+    "description": "Measures taken to protect the OS from threats, viruses, worms, malware, and remote hacker intrusions"
+  },
+  {
+    "name": "cryptography",
+    "track": "Cybersecurity",
+    "description": "Practice and study of techniques for secure communication in the presence of adversarial behavior"
+  },
+  {
+    "name": "ethical hacking",
+    "track": "Cybersecurity",
+    "description": "Act of locating weaknesses and vulnerabilities of computer and information systems"
+  },
+  {
+    "name": "penetration testing",
+    "track": "Cybersecurity",
+    "description": "Authorized simulated cyberattack on a computer system, performed to evaluate the security of the system"
+  },
+  {
+    "name": "incident response",
+    "track": "Cybersecurity",
+    "description": "Organized approach to addressing and managing the aftermath of a security breach or cyberattack"
+  },
+  {
+    "name": "security tools",
+    "track": "Cybersecurity",
+    "description": "Software or hardware solutions used to secure systems, networks, and data"
+  },
+  {
+    "name": "SIEM",
+    "track": "Cybersecurity",
+    "description": "Security information and event management, software products and services combining SIM and SEM"
+  },
+  {
+    "name": "vulnerability assessment",
+    "track": "Cybersecurity",
+    "description": "Process of identifying, quantifying, and prioritizing the vulnerabilities in a system"
+  },
+  {
+    "name": "compliance",
+    "track": "Cybersecurity",
+    "description": "Ensuring that an organization's operations, including data management and security, comply with relevant laws and regulations"
+  },
+  {
+    "name": "mobile UI design",
+    "track": "Mobile Development",
+    "description": "Design of user interfaces for mobile devices"
+  },
+  {
+    "name": "Dart",
+    "track": "Mobile Development",
+    "description": "Client-optimized programming language for apps on multiple platforms"
+  },
+  {
+    "name": "Flutter",
+    "track": "Mobile Development",
+    "description": "Open-source UI software development kit created by Google"
+  },
+  {
+    "name": "React Native",
+    "track": "Mobile Development",
+    "description": "Open-source UI software framework created by Meta Platforms"
+  },
+  {
+    "name": "mobile architecture",
+    "track": "Mobile Development",
+    "description": "Set of patterns and techniques used to design mobile applications"
+  },
+  {
+    "name": "state management",
+    "track": "Mobile Development",
+    "description": "Management of the state of one or more user interface controls"
+  },
+  {
+    "name": "API integration",
+    "track": "Mobile Development",
+    "description": "Process of connecting mobile applications to external services via APIs"
+  },
+  {
+    "name": "app testing",
+    "track": "Mobile Development",
+    "description": "Process by which application software is tested for its correctness, functional behavior, and usability"
+  },
+  {
+    "name": "app deployment",
+    "track": "Mobile Development",
+    "description": "Process of making a mobile application available for use, typically through an app store"
+  },
+  {
+    "name": "mobile security",
+    "track": "Mobile Development",
+    "description": "Protection of smartphones, tablets, and laptops from threats associated with wireless computing"
+  }
+]
