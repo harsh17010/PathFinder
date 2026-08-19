@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './Navbar';
+import { Navbar } from './Navbar';
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
@@ -11,7 +11,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       </div>
       
       <Navbar />
-      <main className="flex-1 w-full max-w-7xl mx-auto px-4 py-8 relative z-10">
+      <main className="flex-1 w-full max-w-7xl mx-auto px-4 py-8 relative z-10 flex flex-col">
         {children}
       </main>
     </div>

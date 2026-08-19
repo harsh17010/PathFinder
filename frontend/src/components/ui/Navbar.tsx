@@ -1,70 +1,69 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { Compass, Home, MessageSquare, LayoutDashboard, Map } from 'lucide-react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { useUser } from '../../context/UserContext';
+import { Compass, User, LogOut } from 'lucide-react';
 
-const Navbar: React.FC = () => {
+export const Navbar: React.FC = () => {
+  const { userProfile, logout } = useUser();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleLogout = () => {
+    logout();
+    navigate('/');
+  };
+
+  const navLinks = [
+    { name: 'Dashboard', path: '/dashboard' },
+    { name: 'Path', path: '/path' },
+    { name: 'Chat', path: '/chat' },
+  ];
+
   return (
-    <nav className="sticky top-0 z-50 w-full glass-card rounded-none border-t-0 border-x-0 border-b-white/10 px-4 py-3">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <NavLink to="/" className="flex items-center gap-2 group">
-          <div className="p-2 bg-primary-600/20 rounded-xl group-hover:bg-primary-600/30 transition-colors">
-            <Compass className="w-6 h-6 text-primary-400" />
-          </div>
-          <span className="text-xl font-bold tracking-tight gradient-text">Pathfinder</span>
-        </NavLink>
+    <nav className="sticky top-0 z-50 bg-surface-950/80 backdrop-blur-lg border-b border-white/5">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-16 items-center">
+          <Link to="/" className="flex items-center space-x-2">
+            <Compass className="w-8 h-8 text-primary-500" />
+            <span className="text-xl font-bold gradient-text">Pathfinder</span>
+          </Link>
 
-        <div className="flex items-center gap-1 md:gap-2">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-all ${
-                isActive ? 'bg-white/10 text-white' : 'text-surface-300 hover:text-white hover:bg-white/5'
-              }`
-            }
-          >
-            <Home className="w-4 h-4" />
-            <span className="hidden md:inline">Home</span>
-          </NavLink>
-          
-          <NavLink
-            to="/chat"
-            className={({ isActive }) =>
-              `flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-all ${
-                isActive ? 'bg-white/10 text-white' : 'text-surface-300 hover:text-white hover:bg-white/5'
-              }`
-            }
-          >
-            <MessageSquare className="w-4 h-4" />
-            <span className="hidden md:inline">Chat</span>
-          </NavLink>
-          
-          <NavLink
-            to="/dashboard"
-            className={({ isActive }) =>
-              `flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-all ${
-                isActive ? 'bg-white/10 text-white' : 'text-surface-300 hover:text-white hover:bg-white/5'
-              }`
-            }
-          >
-            <LayoutDashboard className="w-4 h-4" />
-            <span className="hidden md:inline">Dashboard</span>
-          </NavLink>
-          
-          <NavLink
-            to="/path"
-            className={({ isActive }) =>
-              `flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-all ${
-                isActive ? 'bg-white/10 text-white' : 'text-surface-300 hover:text-white hover:bg-white/5'
-              }`
-            }
-          >
-            <Map className="w-4 h-4" />
-            <span className="hidden md:inline">Path</span>
-          </NavLink>
+          <div className="flex items-center space-x-8">
+            {userProfile ? (
+              <>
+                <div className="hidden md:flex space-x-6">
+                  {navLinks.map((link) => (
+                    <Link
+                      key={link.path}
+                      to={link.path}
+                      className={`text-sm font-medium transition-colors hover:text-white ${
+                        location.pathname === link.path ? 'text-white border-b-2 border-primary-500 pb-1' : 'text-surface-400'
+                      }`}
+                    >
+                      {link.name}
+                    </Link>
+                  ))}
+                </div>
+                <div className="flex items-center space-x-4 border-l border-white/10 pl-6">
+                  <div className="flex items-center space-x-2 text-surface-300">
+                    <div className="w-8 h-8 rounded-full bg-primary-900/50 flex items-center justify-center border border-primary-500/30">
+                      <User className="w-4 h-4 text-primary-400" />
+                    </div>
+                    <span className="text-sm font-medium hidden sm:block">{userProfile.name}</span>
+                  </div>
+                  <button onClick={handleLogout} className="text-surface-500 hover:text-white transition-colors">
+                    <LogOut className="w-5 h-5" />
+                  </button>
+                </div>
+              </>
+            ) : (
+              <Link to="/onboarding" className="btn-primary py-2 px-4 rounded-lg text-sm font-semibold">
+                Get Started
+              </Link>
+            )}
+          </div>
         </div>
       </div>
     </nav>
   );
 };
-
-export default Navbar;
