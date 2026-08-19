@@ -23,3 +23,9 @@ class CourseResponse(CourseBase):
 
 class CourseSearchResult(CourseResponse):
     similarity_score: float
+
+class CourseSearchQuery(BaseModel):
+    query: str
+    user_id: Optional[UUID] = None
+    limit: int = 10
+

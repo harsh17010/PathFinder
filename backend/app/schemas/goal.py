@@ -19,3 +19,8 @@ class GoalResponse(GoalBase):
     user_id: UUID
     created_at: datetime
     model_config = ConfigDict(from_attributes=True)
+
+class GoalParseRequest(BaseModel):
+    user_id: UUID
+    raw_text: str
+
